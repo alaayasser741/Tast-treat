@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap:wght@400;700&');
 /* Variables */
 :root {
   /* height */
@@ -13,6 +13,7 @@
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
   --red-back-color: #DF2020;
+  --red-back-color-dark: #d21717;
   --pink-back-color: #FDE4E4;
   --container-color: #fff;
 
@@ -38,7 +39,7 @@
   --mb-0-25: .25rem;
   --mb-0-5: .5rem;
   --mb-0-75: .75rem;
-  --mb-0-1: 1rem;
+  --mb-1: 1rem;
   --mb-1-5: 1.5rem;
   --mb-2: 2rem;
   --mb-2-5: 2.5rem;
@@ -51,6 +52,14 @@
 
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "RocknRoll One", sans-serif !important;
+}
 /* Responsive typography */
 @media screen and (max-width:992px) {
   :root {
@@ -93,13 +102,9 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  font-family: "Istok Web", sans-serif;
 }
 
-
-body {
-  font-family: 'Poppins', sans-serif;
-  color: var(--black);
-}
 
 h1,
 h2,
@@ -113,7 +118,7 @@ ul {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 button {
@@ -149,8 +154,7 @@ html::-webkit-scrollbar-thumb:hover {
   background: var(--text-color);
 }
 
-p,
-span {
+p {
   color: #999;
 }
 
@@ -178,20 +182,10 @@ span {
 
 /* Layout */
 
-.container {
-  /* Padding for mobile view */
-  max-width: 968px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 
 /* For Large Devices */
 @media (max-width:992px) {
-  .container {
-    margin-left: var(--mb-1-5);
-    margin-right: var(--mb-1-5);
-  }
 
   .button {
     padding: 1rem 1.75rem;
@@ -223,11 +217,6 @@ span {
   :root {
     --big-font-size: 2.25rem;
   }
-
-  .container {
-    margin-left: var(--mb-0-1);
-    margin-right: var(--mb-0-1);
-  }
 }
 
 
@@ -240,16 +229,17 @@ span {
 /* Buttons */
 .button {
   display: inline-block;
-  background-color: var(--title-color);
+  background-color: var(--red-back-color);
   color: var(--container-color);
-  padding: 1.25rem 2rem;
+  padding: .5rem 1.5rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
   transition: 0.3s;
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: var(--red-back-color-dark);
+  color: var(--container-color);
 }
 
 .button__icon {

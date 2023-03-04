@@ -1,0 +1,110 @@
+.landing {
+    min-height: 100vh;
+}
+
+.landing__container {
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.landing__title {
+    display: block;
+    font-size: var(--h3-font-size);
+    margin-block-end: var(--mb-1);
+    font-family: "RocknRoll One", sans-serif !important;
+}
+
+.landing__slogan {
+    font-size: var(--h1-font-size);
+    line-height: 1.2;
+    margin-block-end: var(--mb-1);
+    font-weight: 700;
+}
+
+.landing__slogan span {
+    color: var(--red-back-color);
+}
+
+.landing__description {
+    font-size: var(--small-font-size);
+    margin-block-end: var(--mb-1);
+}
+
+.landing__buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-block-end: var(--mb-3);
+}
+
+.buttons-border {
+    background-color: var(--body-color);
+    color: var(--red-back-color);
+    border: 2px solid var(--red-back-color);
+}
+
+.buttons-border:hover {
+    color: var(--container-color);
+}
+
+.landing__advantage {
+    display: flex;
+    gap: 3rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.landing__advantage-title {
+    display: inline-flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing__advantage-title span {
+    background-color: var(--red-back-color);
+    color: var(--container-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* For Medium Devices */
+@media (max-width:768px) {
+    .landing__container {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .landing__advantage,.landing__buttons{
+        justify-content: center;
+    }
+    .landing__img{
+        width: 350px;
+    }
+  }
+  
+
+  @media (max-width:560px) {
+    .landing__buttons,.landing__advantage{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .landing__buttons a{
+        width: 150px;
+        margin: 0 auto;
+    }
+    .landing__advantage{
+        align-items: flex-start;
+        gap: 1rem;
+    }
+  }
+  @media (max-width:560px){
+    .landing__img{
+        width: 250px;
+    }
+  }
