@@ -43,7 +43,7 @@
 }
 
 .footer__info--form input {
-    border: 1px solid #ccc;
+    border: 1px solid var(--title-color);
     outline: 0;
     background-color: var(--pink-back-color);
     padding: .5rem;

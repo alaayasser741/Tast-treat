@@ -12,8 +12,12 @@
     font-family: "RocknRoll One", sans-serif !important;
     max-width: 310px !important;
     min-width: 250px;
+    transition: 0.4s;
+    cursor: pointer;
 }
-
+.category__box:hover{
+    transform: translateY(-.5rem);
+}
 .category__container {
     justify-content: center;
     gap: 1rem;
