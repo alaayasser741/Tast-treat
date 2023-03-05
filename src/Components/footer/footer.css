@@ -1,0 +1,84 @@
+.footer {
+    padding: 2rem 0 5rem;
+    background-color: var(--pink-back-color);
+}
+
+.footer__info--logo {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer__info--logo img {
+    width: 50px;
+}
+
+.footer__info--logo span {
+    font-weight: 600;
+}
+
+.footer__info h4 {
+    font-size: var(--small-font-size);
+    font-weight: 600;
+
+}
+
+.footer__info span {
+    display: block;
+    font-weight: 600;
+    font-size: var(--smaller-font-size);
+}
+
+.delivery__time {
+    margin-block-end: var(--mb-2);
+}
+
+.footer__info--content span {
+    margin-block-end: var(--mb-1);
+}
+
+.footer__info--form span {
+    margin-block-end: 1rem;
+
+}
+
+.footer__info--form input {
+    border: 1px solid #ccc;
+    outline: 0;
+    background-color: var(--pink-back-color);
+    padding: .5rem;
+    border-radius: 6px;
+    width: 100%;
+    position: relative;
+}
+
+form {
+    position: relative;
+}
+
+input[type="email"] {
+    padding-right: 40px;
+    /* Adjust this value as per your design */
+}
+
+.form-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    /* Adjust this value as per your design */
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--title-color);
+    color: var(--container-color);
+    padding: .3rem;
+    border-radius: 10px;
+}
+
+@media (max-width:992px) {
+    form {
+        max-width: 300px;
+    }
+}
