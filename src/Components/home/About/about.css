@@ -1,0 +1,56 @@
+.about {
+    margin: var(--mb-3) 0;
+
+}
+
+.about__content {
+    justify-content: center;
+    align-items: center;
+}
+
+.about__img {
+    max-width: 500px;
+    min-width: 300px;
+}
+
+.about__info h3 {
+    font-weight: 600;
+    margin-block-end: var(--mb-1);
+}
+
+.about__info h3 span {
+    color: var(--red-back-color);
+}
+
+.about__info p {
+    margin-block-end: var(--mb-2);
+}
+
+.about__feature svg {
+    color: var(--red-back-color);
+
+}
+
+.about__feature span {
+    font-weight: 600;
+}
+
+.about__feat {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    margin-block-end: var(--mb-0-25);
+}
+
+@media (max-width:992px) {
+
+    .about__img {
+        max-width: 100%;
+    }
+
+    .about__img img {
+        width: 450px;
+        margin: 0 auto;
+        display: block;
+    }
+}

@@ -1,5 +1,6 @@
 .popular {
     margin-block-end: var(--mb-3);
+    min-height: 600px;
 }
 
 .popular__title {
@@ -37,10 +38,12 @@
     background-color: var(--body-color);
     color: var(--red-back-color);
 }
-.popular__food{
+
+.popular__food {
     gap: 1rem;
     justify-content: center;
 }
+
 .popular__box {
     width: 250px !important;
     border: 1px solid #ddd;
@@ -52,30 +55,38 @@
     padding: 1.5rem 2rem;
     border-radius: 10px;
 }
-.popular__box img{
+
+.popular__box img {
     width: 110px;
 }
-.popular__food-name{
+
+.popular__food-name {
     font-size: var(--smaller-font-size);
     margin-block-end: var(--mb-2);
 }
-.food__buy{
+
+.food__buy {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-.food__buy span{
+
+.food__buy span {
     font-weight: 600;
+    color: var(--red-back-color);
 }
-.button-addToCart{
+
+.button-addToCart {
     font-size: .7rem !important;
 }
-@media (max-width:560px){
-    .Popular__filter{
+
+@media (max-width:560px) {
+    .Popular__filter {
         gap: .5rem;
     }
-    .Popular__filter li{
+
+    .Popular__filter li {
         font-size: 1rem;
     }
-  }
+}

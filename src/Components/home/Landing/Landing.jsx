@@ -19,8 +19,8 @@ const Landing = () => {
           </div>
 
           <div className="landing__advantage">
-            <span className='landing__advantage-title'><span><UilCar className="landing__advantage-icon"/></span>No shipping fees</span>
-            <span className='landing__advantage-title'><span><UilShieldCheck className="landing__advantage-icon"/></span>100% secure cheackout</span>
+            <span className='landing__advantage-title'><span><UilCar className="landing__advantage-icon" /></span>No shipping fees</span>
+            <span className='landing__advantage-title'><span><UilShieldCheck className="landing__advantage-icon" /></span>100% secure cheackout</span>
           </div>
         </div>
         <div className="landing__img">
